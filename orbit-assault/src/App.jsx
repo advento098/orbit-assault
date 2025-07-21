@@ -11,9 +11,6 @@ function App() {
 
       <nav>
         <ul>
-          <li></li>
-        </ul>
-        <ul>
           <li>
             <a>About</a>
           </li>
@@ -23,9 +20,7 @@ function App() {
           <li>
             <a>Shop</a>
           </li>
-          <button>
-            <span>Login</span>
-          </button>
+          <button>Login</button>
         </ul>
       </nav>
 
