@@ -17,9 +17,7 @@ function App() {
           <li>About</li>
           <li>News</li>
           <li>Shop</li>
-          <li>
-            <button>Login</button>
-          </li>
+          <button>Login</button>
         </ul>
       </nav>
 
@@ -31,7 +29,7 @@ function App() {
       </section>
       <section>
         <p>Dare to test your limits in surviving the dark empty space?</p>
-        <button className="neon-button .poppins-regular">Download now!</button>
+        <button className="neon-button poppins-regular">Download now!</button>
       </section>
     </div>
   );
