@@ -12,7 +12,14 @@ function App() {
       <nav>
         <ul>
           <li></li>
-          <li></li>
+        </ul>
+        <ul>
+          <li>About</li>
+          <li>News</li>
+          <li>Shop</li>
+          <li>
+            <button>Login</button>
+          </li>
         </ul>
       </nav>
 
@@ -22,7 +29,10 @@ function App() {
           <span className="poppins-bold">ASSAULT</span>
         </h1>
       </section>
-      <section></section>
+      <section>
+        <p>Dare to test your limits in surviving the dark empty space?</p>
+        <button className="neon-button .poppins-regular">Download now!</button>
+      </section>
     </div>
   );
 }
