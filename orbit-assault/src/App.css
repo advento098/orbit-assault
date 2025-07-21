@@ -182,8 +182,46 @@ section > p {
   font-style: normal;
 }
 
-/* Different medias */
+/* Different screens */
+@media only screen and (max-width: 651px) {
+  nav {
+    justify-content: center;
+  }
 
-@media only screen and (max-width: 650px) {
-  
+  nav > ul {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav > ul > button {
+    margin: 0;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+
+  section {
+    text-align: center;
+    margin: 0;
+  }
+
+  section:nth-of-type(1) > h1 {
+    font-size: clamp(2rem, 15vw, 6rem);
+  }
+
+  section:nth-of-type(2) {
+    margin: min(1px, 5px);
+    align-items: center;
+  }
+
+  section:nth-of-type(2) p {
+    font-size: clamp(1rem, 5vw, 1.2rem);
+  }
+
+  section:nth-of-type(2) button {
+    justify-self: end;
+  }
+
+  .neon-button {
+    font-size: clamp(0.4em, 4vw, 1em);
+  }
 }

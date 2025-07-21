@@ -20,7 +20,9 @@ function App() {
           <li>
             <a>Shop</a>
           </li>
-          <button>Login</button>
+          <li>
+            <button>Login</button>
+          </li>
         </ul>
       </nav>
 
