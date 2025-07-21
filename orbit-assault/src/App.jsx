@@ -14,17 +14,25 @@ function App() {
           <li></li>
         </ul>
         <ul>
-          <li>About</li>
-          <li>News</li>
-          <li>Shop</li>
-          <button>Login</button>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>News</a>
+          </li>
+          <li>
+            <a>Shop</a>
+          </li>
+          <button>
+            <span>Login</span>
+          </button>
         </ul>
       </nav>
 
       <section>
         <h1 className="poppins-regular">
-          ORBIT <br />
-          <span className="poppins-bold">ASSAULT</span>
+          SPACE <br />
+          <span className="poppins-bold">VOYAGE</span>
         </h1>
       </section>
       <section>
