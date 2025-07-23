@@ -26,16 +26,18 @@ function App() {
         </ul>
       </nav>
 
-      <section>
-        <h1 className="poppins-regular">
-          SPACE <br />
-          <span className="poppins-bold">VOYAGE</span>
-        </h1>
-      </section>
-      <section>
-        <p>Dare to test your limits in surviving the dark empty space?</p>
-        <button className="neon-button poppins-regular">Download now!</button>
-      </section>
+      <div>
+        <section>
+          <h1 className="poppins-regular">
+            SPACE <br />
+            <span className="poppins-bold">VOYAGE</span>
+          </h1>
+          <p>Dare to test your limits in surviving the dark empty space?</p>
+        </section>
+        <section>
+          <button className="neon-button poppins-regular">Download now!</button>
+        </section>
+      </div>
     </div>
   );
 }

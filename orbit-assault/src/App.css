@@ -45,7 +45,7 @@ li {
 nav > ul {
   margin-right: min(5rem, 5%);
   font-weight: 500;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.1rem);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -79,12 +79,14 @@ nav > ul button {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
-  font-size: clamp(0.5rem, 2.5vw, 0.9rem);
+  font-size: min(1rem, 2vw);
+  text-align: center;
+  line-height: 0;
   text-transform: uppercase;
-  height: max-content;
-  width: max-content;
+  height: 2.5em;
+  width: 7em;
   border-style: none;
-  padding: clamp(0.5rem, 2vw, 10px) clamp(1.5rem, 5vw, 30px);
+  padding: 0.5em;
   background-color: #131219;
   border: 1.5px solid transparent;
   border-radius: 50px;
@@ -151,7 +153,7 @@ section > p {
   cursor: pointer;
   border: 3px solid #0000;
   background: linear-gradient(#131219, #131219) padding-box,
-    linear-gradient(var(--angle), #070707, #070707, var(--neon)) border-box;
+    linear-gradient(var(--angle), #131219, #131219, var(--neon)) border-box;
   transition: 0.1s ease-in-out;
   animation: 5s rotate linear infinite;
 }
@@ -183,7 +185,15 @@ section > p {
 }
 
 /* Different screens */
-@media only screen and (max-width: 651px) {
+@media only screen and (max-width: 600px) {
+  #root > div > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   nav {
     justify-content: center;
   }
@@ -191,9 +201,13 @@ section > p {
   nav > ul {
     width: 100%;
     margin: 0;
+    font-size: clamp(0.8rem, 2.7vw, 1rem);
   }
 
-  nav > ul > button {
+  nav > ul > li > button {
+    height: 2.5em;
+    width: 7em;
+    font-size: clamp(0.7rem, 2vw, 1rem);
     margin: 0;
     justify-self: flex-end;
     align-self: flex-end;
@@ -205,16 +219,15 @@ section > p {
   }
 
   section:nth-of-type(1) > h1 {
-    font-size: clamp(2rem, 15vw, 6rem);
+    font-size: clamp(3em, 20vw, 7rem);
+  }
+
+  section:nth-of-type(1) p {
+    font-size: clamp(0.85rem, 3vw, 1.1rem);
   }
 
   section:nth-of-type(2) {
-    margin: min(1px, 5px);
     align-items: center;
-  }
-
-  section:nth-of-type(2) p {
-    font-size: clamp(1rem, 5vw, 1.2rem);
   }
 
   section:nth-of-type(2) button {
