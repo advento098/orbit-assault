@@ -55,6 +55,8 @@ nav > ul {
 nav a {
   cursor: pointer;
   position: relative;
+  text-decoration: none;
+  color: white;
 }
 
 nav a::after {

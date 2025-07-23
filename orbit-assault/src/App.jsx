@@ -1,24 +1,25 @@
 import { useEffect, useRef } from "react";
 import "./App.css";
+import vidBg from "./assets/space-background.mp4";
 
 function App() {
   return (
     <div>
       <video autoPlay loop muted>
-        <source src="./src/assets/space-background.mp4" type="video/mp4" />
+        <source src={vidBg} type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
 
       <nav>
         <ul>
           <li>
-            <a>About</a>
+            <a href="/">About</a>
           </li>
           <li>
-            <a>News</a>
+            <a href="/">News</a>
           </li>
           <li>
-            <a>Shop</a>
+            <a href="/">Shop</a>
           </li>
           <li>
             <button>Login</button>
